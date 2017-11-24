@@ -313,7 +313,6 @@
   "Context": {
     "ReferenceDateTime": "2017-09-15T00:00:00"
   },
-  "NotSupported": "javascript",
   "NotSupportedByDesign": "python",
   "Results": [
     {
@@ -1030,7 +1029,6 @@
   "Context": {
     "ReferenceDateTime": "2016-11-07T00:00:00"
   },
-  "NotSupported": "javascript",
   "NotSupportedByDesign": "python",
   "Results": [
     {
@@ -1066,7 +1064,6 @@
   "Context": {
     "ReferenceDateTime": "2016-11-07T00:00:00"
   },
-  "NotSupported": "javascript",
   "NotSupportedByDesign": "python",
   "Results": [
     {
@@ -1102,7 +1099,6 @@
   "Context": {
     "ReferenceDateTime": "2016-11-07T00:00:00"
   },
-  "NotSupported": "javascript",
   "NotSupportedByDesign": "python",
   "Results": [
     {
@@ -1143,7 +1139,6 @@
   "Context": {
     "ReferenceDateTime": "2016-11-07T00:00:00"
   },
-  "NotSupported": "javascript",
   "NotSupportedByDesign": "python",
   "Results": [
     {
@@ -1166,7 +1161,6 @@
   "Context": {
     "ReferenceDateTime": "2016-11-07T00:00:00"
   },
-  "NotSupported": "javascript",
   "NotSupportedByDesign": "python",
   "Results": [
     {
@@ -1180,6 +1174,74 @@
       "value": "10:00:00"
       }
     ]
+      }
+    }
+  ]
+},
+{
+  "Input": "I'll be back in 5 minutes",
+  "Context": {
+    "ReferenceDateTime": "2016-11-07T00:00:00"
+  },
+  "NotSupportedByDesign": "python",
+  "Results": [
+    {
+      "Text": "in 5 minutes",
+      "Type": "datetimeV2.datetime",
+      "Value": {
+        "values": [
+          {
+            "timex": "2016-11-07T00:05:00",
+            "type": "datetime",
+            "value": "2016-11-07 00:05:00"
+          }
+        ]
+      }
+    }
+  ]
+},
+{
+  "Input": "in 5 minutes",
+  "Context": {
+    "ReferenceDateTime": "2016-11-07T00:00:00"
+  },
+  "NotSupportedByDesign": "python",
+  "Results": [
+    {
+      "Text": "in 5 minutes",
+      "Type": "datetimeV2.datetime",
+      "Value": {
+        "values": [
+          {
+            "timex": "2016-11-07T00:05:00",
+            "type": "datetime",
+            "value": "2016-11-07 00:05:00"
+          }
+        ]
+      }
+    }
+  ]
+},
+{
+  "Input": "Schedule during the morning",
+  "Context": {
+    "ReferenceDateTime": "2016-11-07T16:12:00"
+  },
+  "NotSupported": "javascript",
+  "NotSupportedByDesign": "python",
+  "Results": [
+    {
+      "Text": "morning",
+      "Type": "timerange",
+      "Value": {
+        "values": [
+          {
+            "timex": "TMO",
+            "type": "timerange",
+            "start": "08:00:00",
+            "end": "12:00:00"
+          }
+        ]
       }
     }
   ]
